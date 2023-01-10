@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--? GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tesla UI Clone</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          screen: {
+            sm: "490px",
+            md: "768px",
+            lg: "1150px",
+            xl: "1440px",
+          },
+          extend: {
+            // colors: {
+            // },
+          },
+        },
+      };
+      module.exports = {
+        theme: {
+          fontFamily: {
+            Poppins: ["Poppins", "ui-sans-serif", "system-ui"],
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Poppins">
+    <!-- HEADER & MODEL Y  -->
+    <div
+      class="relative bg-[url('https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70')] h-screen bg-center bg-cover"
+    >
+      <div class="flex items-center justify-between pt-4">
+        <div class="ml-10">
+          <svg
+            class="w-32 cursor-pointer"
+            viewBox="0 0 342 35"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+        <div class="hidden lg:inline-block">
+          <ul class="flex items-center space-between space-x-1">
+            <li
+              class="text-sm transition ease-in-out hover:bg-slate-300 duration-300 rounded font-semibold cursor-pointer px-4 py-1"
+            >
+              Model S
+            </li>
+            <li
+              class="text-sm transition ease-in-out hover:bg-slate-300 duration-300 rounded font-semibold cursor-pointer px-4 py-1"
+            >
+              Model 3
+            </li>
+            <li
+              class="text-sm transition ease-in-out hover:bg-slate-300 duration-300 rounded font-semibold cursor-pointer px-4 py-1"
+            >
+              Model X
+            </li>
+            <li
+              class="text-sm transition ease-in-out hover:bg-slate-300 duration-300 rounded font-semibold cursor-pointer px-4 py-1"
+            >
+              Model Y
+            </li>
+            <li
+              class="text-sm transition ease-in-out hover:bg-slate-300 duration-300 rounded font-semibold cursor-pointer px-4 py-1"
+            >
+              Solar Roof
+            </li>
+            <li
+              class="text-sm transition ease-in-out hover:bg-slate-300 duration-300 rounded font-semibold cursor-pointer px-4 py-1"
+            >
+              Solar Panels
+            </li>
+          </ul>
+        </div>
+        <div class="hidden sm:inline-block">
+          <ul class="flex items-center space-between space-x-2 mr-4">
+            <li
+              class="text-sm transition ease-in-out hover:bg-slate-300 duration-300 rounded font-semibold cursor-pointer px-4 py-1"
+            >
+              Shop
+            </li>
+            <li
+              class="text-sm transition ease-in-out hover:bg-slate-300 duration-300 rounded font-semibold cursor-pointer px-4 py-1"
+            >
+              Account
+            </li>
+            <li
+              class="text-sm transition ease-in-out hover:bg-slate-300 duration-300 rounded font-semibold cursor-pointer px-4 py-1"
+            >
+              Menu
+            </li>
+          </ul>
+        </div>
+        <div class="absolute top-20 left-[50%] translate-x-[-50%]">
+          <h1 class="text-5xl font-semibold text-center mx-auto">Model Y</h1>
+          <p
+            class="text-lg underline underline-offset-4 hover:decoration-2 cursor-pointer text-[#5c5d61]"
+          >
+            Schedule a Demo Drive
+          </p>
+        </div>
+        <div
+          class="absolute bottom-[80px] left-[50%] translate-x-[-50%] flex justify-center items-center flex-col gap-4 md:flex-row"
+        >
+          <button
+            class="w-80 sm:w-96 font-semibold bg-[#000000b0] text-white rounded py-2 md:w-60"
+          >
+            Custom Order
+          </button>
+          <button
+            class="w-80 sm:w-96 font-semibold bg-[#fffffeb0] text-black rounded py-2 md:w-60"
+          >
+            View Inventory
+          </button>
+        </div>
+        <div class="absolute bottom-[20px] left-[50%] translate-x-[-50%]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-7 h-7 animate-bounce"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- MODEL 3 -->
+    <div
+    class="relative bg-[url('https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD')] h-screen bg-center bg-cover"
+  >
+   
+      <div class="absolute top-20 left-[50%] translate-x-[-50%]">
+        <h1 class="text-5xl font-semibold text-center mx-auto">Model 3</h1>
+        <p
+          class="text-lg underline underline-offset-4 hover:decoration-2 cursor-pointer text-[#5c5d61]"
+        >
+          Schedule a Demo Drive
+        </p>
+      </div>
+      <div
+        class="absolute bottom-[80px] left-[50%] translate-x-[-50%] flex justify-center items-center flex-col gap-4 md:flex-row"
+      >
+        <button
+          class="w-80 sm:w-96 font-semibold bg-[#000000b0] text-white rounded py-2 md:w-60"
+        >
+          Custom Order
+        </button>
+        <button
+          class="w-80 sm:w-96 font-semibold bg-[#fffffeb0] text-black rounded py-2 md:w-60"
+        >
+        View Inventory
+        </button>
+      </div>
+      <div class="absolute bottom-[20px] left-[50%] translate-x-[-50%]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-7 h-7 animate-bounce"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- MODEL S -->
+  <div
+  class="relative bg-[url('https://tesla-cdn.thron.com/delivery/public/image/tesla/2056ad87-6a25-403c-89f3-35fe291bdb65/bvlatuR/std/2880x1800/Homepage-Model-S-Desktop-LHD?quality=auto-medium&amp;format=auto')] h-screen bg-center bg-cover"
+>
+ 
+    <div class="absolute top-20 left-[50%] translate-x-[-50%]">
+      <h1 class="text-5xl font-semibold text-center mx-auto">Model S</h1>
+      <p
+        class="text-lg underline underline-offset-4 hover:decoration-2 cursor-pointer text-[#5c5d61]"
+      >
+        Schedule a Demo Drive
+      </p>
+    </div>
+    <div
+      class="absolute bottom-[80px] left-[50%] translate-x-[-50%] flex justify-center items-center flex-col gap-4 md:flex-row"
+    >
+      <button
+        class="w-80 sm:w-96 font-semibold bg-[#000000b0] text-white rounded py-2 md:w-60"
+      >
+        Custom Order
+      </button>
+      <button
+        class="w-80 sm:w-96 font-semibold bg-[#fffffeb0] text-black rounded py-2 md:w-60"
+      >
+        View Inventory
+      </button>
+    </div>
+  </div>
+</div>
+<!-- MODEL X  -->
+<div
+  class="relative bg-[url('https://tesla-cdn.thron.com/delivery/public/image/tesla/17ecbd59-0e37-4add-8aca-f905d12c02e4/bvlatuR/std/2880x1800/Homepage-Model-X-Desktop-LHD?quality=auto-medium&amp;format=auto')] h-screen bg-center bg-cover"
+>
+ 
+    <div class="absolute top-20 left-[50%] translate-x-[-50%]">
+      <h1 class="text-5xl font-semibold text-center mx-auto">Model X</h1>
+      <p
+        class="text-lg underline underline-offset-4 hover:decoration-2 cursor-pointer text-[#5c5d61]"
+      >
+        Schedule a Demo Drive
+      </p>
+    </div>
+    <div
+      class="absolute bottom-[80px] left-[50%] translate-x-[-50%] flex justify-center items-center flex-col gap-4 md:flex-row"
+    >
+      <button
+        class="w-80 sm:w-96 font-semibold bg-[#000000b0] text-white rounded py-2 md:w-60"
+      >
+        Custom Order
+      </button>
+      <button
+        class="w-80 sm:w-96 font-semibold bg-[#fffffeb0] text-black rounded py-2 md:w-60"
+      >
+       View Inventory
+      </button>
+    </div>
+
+  </div>
+</div>
+<!-- SOLOR PANELS -->
+<div
+  class="relative bg-[url('https://tesla-cdn.thron.com/delivery/public/image/tesla/16b04537-a4be-4bf9-8637-86862a858da8/bvlatuR/std/2880x1800/_25-HP-SolarPanels-D')] h-screen bg-center bg-cover"
+>
+ 
+    <div class="absolute top-20 left-[50%] translate-x-[-50%]">
+      <h1 class="text-4xl font-semibold text-center mx-auto">Solar Panels</h1>
+      <p
+        class="text-lg  cursor-pointer text-[#5c5d61]"
+      >
+        Lowest Cost Solar Panels in America
+      </p>
+    </div>
+    <div
+      class="absolute bottom-[80px] left-[50%] translate-x-[-50%] flex justify-center items-center flex-col gap-4 md:flex-row"
+    >
+      <button
+        class="w-80 sm:w-96 font-semibold bg-[#000000b0] text-white rounded py-2 md:w-60"
+      >
+        Custom Order
+      </button>
+      <button
+        class="w-80 sm:w-96 font-semibold bg-[#fffffeb0] text-black rounded py-2 md:w-60"
+      >
+       Learn More
+      </button>
+    </div>
+  </div>
+</div>
+<!-- SOLOR ROOF -->
+<div
+  class="relative bg-[url('https://tesla-cdn.thron.com/delivery/public/image/tesla/4a41ec0e-7316-46a8-8ce9-e2f195ba644d/bvlatuR/std/2880x1800/Homepage-SolarRoof-Desktop-Global?quality=auto-medium&format=auto')] h-screen bg-center bg-cover"
+>
+ 
+    <div class="absolute top-20 left-[50%] translate-x-[-50%]">
+      <h1 class="text-4xl font-semibold text-center mx-auto">Solor Roof</h1>
+      <p
+        class="text-lg cursor-pointer text-[#5c5d61]"
+      >
+      Produce Clean Energy From Your Roof
+      </p>
+    </div>
+    <div
+      class="absolute bottom-[80px] left-[50%] translate-x-[-50%] flex justify-center items-center flex-col gap-4 md:flex-row"
+    >
+      <button
+        class="w-80 sm:w-96 font-semibold bg-[#000000b0] text-white rounded py-2 md:w-60"
+      >
+        Custom Order
+      </button>
+      <button
+        class="w-80 sm:w-96 font-semibold bg-[#fffffeb0] text-black rounded py-2 md:w-60"
+      >
+        Learn More
+      </button>
+    </div>
+
+  </div>
+</div>
+<!-- FOOTER  -->
+<div
+  class="relative bg-[url('https://tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/0x0/dd739764-bcaa-4263-9488-8c73bc9fb046')] h-screen bg-center bg-cover"
+>
+ 
+    <div class="absolute top-20 left-[50%] translate-x-[-50%]">
+      <h1 class="text-4xl font-semibold text-center mx-auto">Accessories</h1>
+    </div>
+    <div
+      class="absolute bottom-[130px] left-[50%] translate-x-[-50%] flex justify-center items-center flex-col gap-4 md:flex-row"
+    >
+      <button
+        class="w-80 sm:w-96 font-semibold bg-[#000000] text-white rounded py-2 md:w-60"
+      >
+        Shop Now
+      </button>
+    </div>
+  </div>
+  <footer class="flex items-center content-center justify-center">
+    <ul class="flex items-center justify-center flex-col gap-1 mb-10 md:flex-row gap-4">
+      <li
+      class="text-sm font-semibold cursor-pointer md:font-base"
+      >
+      Tesla © 2023
+      </li>
+      <li
+      class="font-semibold text-sm font-base cursor-pointer md:font-base"
+      >
+      Privacy & Legal
+      </li>
+      <li
+      class="font-semibold text-sm font-base cursor-pointer md:font-base"
+      >
+      Vehicle Recalls
+      </li>
+      <li
+      class="font-semibold text-sm font-base cursor-pointer md:font-base"
+      >
+      Contact
+      </li>
+      <li
+      class="font-semibold hidden md:inline-block text-sm font-base cursor-pointer md:font-base"
+      >
+      Careers
+      </li>
+      <li
+      class="font-semibold text-sm font-base cursor-pointer md:font-base"
+      >
+      News
+      </li>
+      <li
+      class="font-semibold hidden md:inline-block text-sm font-base cursor-pointer md:font-base"
+      >
+      Engage
+      </li>
+      <li
+        class="font-semibold hidden md:inline-block text-sm font-base cursor-pointer md:font-base"
+      >
+      Locations
+      </li>
+    </ul>
+  </footer>
+</div>
+</body>
+</html>
