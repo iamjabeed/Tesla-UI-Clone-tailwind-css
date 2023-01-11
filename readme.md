@@ -1,7 +1,6 @@
 # Tesla UI Clone
 ## Hello there, Welcome to my repository!
-### project name:Todo list 
-## [Live Demo](https://todo-list-byj.netlify.app/)
+## [Live Demo](https://teslaclone-ui.netlify.app/)
 ![Screen Shots](./Screen%20shots/127.0.0.1_5500_index.html.png "tesla")
 ![Screen Shots](./Screen%20shots/127.0.0.1_5500_index.html%20(1).png "tesla")
 ![Screen Shots](./Screen%20shots/127.0.0.1_5500_index.html%20(2).png "tesla")
