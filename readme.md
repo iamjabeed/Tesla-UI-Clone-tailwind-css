@@ -8,4 +8,4 @@
 ![Screen Shots](./Screen%20shots/127.0.0.1_5500_index.html%20(4).png "tesla")
 ## Technologies used:<br>
 HTML <br>
-Tailwind css
+Tailwind CSS
